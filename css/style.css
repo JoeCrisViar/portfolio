@@ -47,7 +47,7 @@ img:hover {
 	top: 65%;
 	left: 54%;
 	transform: translate(-50%, -50%);
-	animation: moveInLeft 2.5s ease-out;
+	animation: moveInLeft 1.5s ease-out;
 
 }
 
@@ -74,63 +74,63 @@ img:hover {
 #myname path:nth-child(4){
 	stroke-dasharray: 525.2340087890625px;
 	stroke-dashoffset: 525.2340087890625px;	
-	animation: line-animate 2s ease forwards 0.4s;
+	animation: line-animate 2s ease forwards 0.2s;
 }
 /* C */
 #myname path:nth-child(5){
 	stroke-dasharray: 480.2796936035156px;
 	stroke-dashoffset: 480.2796936035156px;
-	animation: line-animate 2s ease forwards 0.6s;
-	animation: fillin-name 3s ease forwards 2.5s;		
+	animation: line-animate 2s ease forwards 0.2s;
+	animation: fillin-name 1s ease forwards 2.5s;		
 }
 
 /* R */
 #myname path:nth-child(6){
 	stroke-dasharray: 563.734130859375px;
 	stroke-dashoffset: 563.734130859375px;
-	animation: line-animate 2s ease forwards 0.8s;	
+	animation: line-animate 2s ease forwards 0.2s;	
 }
 
 /* I */
 #myname path:nth-child(7){
 	stroke-dasharray: 231.75px;
 	stroke-dashoffset: 231.75px;
-	animation: line-animate 2s ease forwards 1.0s;
+	animation: line-animate 2s ease forwards 0.2s;
 }
 
 /* S */
 #myname path:nth-child(8){
 	stroke-dasharray: 533.3997192382812px;
 	stroke-dashoffset: 533.3997192382812px;
-	animation: line-animate 2s ease forwards 1.2s;
+	animation: line-animate 2s ease forwards 0.2s;
 }
 /* V */
 #myname path:nth-child(9){
 	stroke-dasharray: 438.456298828125px;
 	stroke-dashoffset: 438.456298828125px;
 	animation: line-animate 2s ease forwards 1.4s;
-	animation: fillin-name 5s ease forwards 2.5s;
+	animation: fillin-name 1s ease forwards 2.5s;
 }
 
 /* I */
 #myname path:nth-child(10){
 	stroke-dasharray: 231.75px;
 	stroke-dashoffset: 231.75px;
-	animation: line-animate 2s ease forwards 1.6s;
+	animation: line-animate 2s ease forwards 0.2s;
 }
 
 /* A */
 #myname path:nth-child(11){
 	stroke-dasharray: 495.2242126464844px;
 	stroke-dashoffset: 495.2242126464844px;
-	animation: line-animate 2s ease forwards 1.8s;
+	animation: line-animate 2s ease forwards 0.2s;
 }
 
 /* R */
 #myname path:nth-child(12){
 	stroke-dasharray: 563.734619140625px;
 	stroke-dashoffset: 563.734619140625px;
-	animation: line-animate 2s ease forwards 2.0s;
+	animation: line-animate 2s ease forwards 0.2s;
 }	
 
 @keyframes line-animate{
