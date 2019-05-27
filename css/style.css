@@ -1,0 +1,165 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/**{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}*/
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+}
+
+header{
+	height: 600px;
+	backface-visibility: hidden;
+}
+
+img{
+	-webkit-filter: grayscale(100%);
+	-o-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+img:hover {
+	-webkit-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+  filter: grayscale(0%);
+}
+ 
+#myname{
+	position: absolute;
+	top: 50%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	animation: fillin-name 0.5s ease forwards 3s;
+}
+
+#mycareer{
+	position: absolute;
+	top: 65%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	animation: moveInLeft 2.5s ease-out;
+
+}
+
+
+#myname path:nth-child(1){
+	
+}
+
+/* J */
+#myname path:nth-child(2){
+	stroke-dasharray: 334.1293029785156px;
+	stroke-dashoffset: 334.1293029785156px;
+	animation: line-animate 2s ease forwards;
+	animation: fillin-name 1.0s ease forwards 2.5s;	
+}
+
+/* O */
+#myname path:nth-child(3){
+	stroke-dasharray: 527.4258422851562px;
+	stroke-dashoffset: 527.4258422851562px;
+	animation: line-animate 2s ease forwards 0.2s;
+}
+/* E */
+#myname path:nth-child(4){
+	stroke-dasharray: 525.2340087890625px;
+	stroke-dashoffset: 525.2340087890625px;	
+	animation: line-animate 2s ease forwards 0.4s;
+}
+/* C */
+#myname path:nth-child(5){
+	stroke-dasharray: 480.2796936035156px;
+	stroke-dashoffset: 480.2796936035156px;
+	animation: line-animate 2s ease forwards 0.6s;
+	animation: fillin-name 3s ease forwards 2.5s;		
+}
+
+/* R */
+#myname path:nth-child(6){
+	stroke-dasharray: 563.734130859375px;
+	stroke-dashoffset: 563.734130859375px;
+	animation: line-animate 2s ease forwards 0.8s;	
+}
+
+/* I */
+#myname path:nth-child(7){
+	stroke-dasharray: 231.75px;
+	stroke-dashoffset: 231.75px;
+	animation: line-animate 2s ease forwards 1.0s;
+}
+
+/* S */
+#myname path:nth-child(8){
+	stroke-dasharray: 533.3997192382812px;
+	stroke-dashoffset: 533.3997192382812px;
+	animation: line-animate 2s ease forwards 1.2s;
+}
+/* V */
+#myname path:nth-child(9){
+	stroke-dasharray: 438.456298828125px;
+	stroke-dashoffset: 438.456298828125px;
+	animation: line-animate 2s ease forwards 1.4s;
+	animation: fillin-name 5s ease forwards 2.5s;
+}
+
+/* I */
+#myname path:nth-child(10){
+	stroke-dasharray: 231.75px;
+	stroke-dashoffset: 231.75px;
+	animation: line-animate 2s ease forwards 1.6s;
+}
+
+/* A */
+#myname path:nth-child(11){
+	stroke-dasharray: 495.2242126464844px;
+	stroke-dashoffset: 495.2242126464844px;
+	animation: line-animate 2s ease forwards 1.8s;
+}
+
+/* R */
+#myname path:nth-child(12){
+	stroke-dasharray: 563.734619140625px;
+	stroke-dashoffset: 563.734619140625px;
+	animation: line-animate 2s ease forwards 2.0s;
+}	
+
+@keyframes line-animate{
+	to{
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fillin-name{
+	from{
+		fill: transparent;
+	}
+	to{
+		fill: white;
+	}
+}
+
+@keyframes moveInLeft{
+	0% {
+		opacity: 0;
+		transform: translateX(-800px);
+	}
+
+	80%{
+		transform: translate(-10px, -10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}

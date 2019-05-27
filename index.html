@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>My Web Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!-- <img src="jc-2.png" style="width:100%"> -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h4> 
+
+      <svg id="myname" width="958" height="116" viewBox="0 0 958 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.296875" y="0.21875" width="958" height="116" fill="black">
+      <rect fill="white" x="0.296875" y="0.21875" width="958" height="116"/>
+      <path d="M56.3438 6.625H69.9141V79.1172C69.9141 88.9141 66.9609 96.5781 61.0547 102.109C55.1953 107.641 47.3672 110.406 37.5703 110.406C27.3984 110.406 19.4766 107.805 13.8047 102.602C8.13281 97.3984 5.29688 90.1094 5.29688 80.7344H18.7969C18.7969 86.5938 20.3906 91.1641 23.5781 94.4453C26.8125 97.7266 31.4766 99.3672 37.5703 99.3672C43.1484 99.3672 47.6484 97.6094 51.0703 94.0938C54.5391 90.5781 56.2969 85.6562 56.3438 79.3281V6.625Z"/>
+      <path d="M171.656 61.1172C171.656 71.1484 169.969 79.9141 166.594 87.4141C163.219 94.8672 158.438 100.562 152.25 104.5C146.062 108.438 138.844 110.406 130.594 110.406C122.531 110.406 115.383 108.438 109.148 104.5C102.914 100.516 98.0625 94.8672 94.5938 87.5547C91.1719 80.1953 89.4141 71.6875 89.3203 62.0312V54.6484C89.3203 44.8047 91.0312 36.1094 94.4531 28.5625C97.875 21.0156 102.703 15.25 108.938 11.2656C115.219 7.23438 122.391 5.21875 130.453 5.21875C138.656 5.21875 145.875 7.21094 152.109 11.1953C158.391 15.1328 163.219 20.875 166.594 28.4219C169.969 35.9219 171.656 44.6641 171.656 54.6484V61.1172ZM158.227 54.5078C158.227 42.3672 155.789 33.0625 150.914 26.5938C146.039 20.0781 139.219 16.8203 130.453 16.8203C121.922 16.8203 115.195 20.0781 110.273 26.5938C105.398 33.0625 102.891 42.0625 102.75 53.5938V61.1172C102.75 72.8828 105.211 82.1406 110.133 88.8906C115.102 95.5938 121.922 98.9453 130.594 98.9453C139.312 98.9453 146.062 95.7812 150.844 89.4531C155.625 83.0781 158.086 73.9609 158.227 62.1016V54.5078Z"/>
+      <path d="M249.773 61.6797H205.406V97.9609H256.945V109H191.906V6.625H256.242V17.7344H205.406V50.6406H249.773V61.6797Z"/>
+      <path d="M384.773 76.5156C383.508 87.3438 379.5 95.7109 372.75 101.617C366.047 107.477 357.117 110.406 345.961 110.406C333.867 110.406 324.164 106.07 316.852 97.3984C309.586 88.7266 305.953 77.125 305.953 62.5938V52.75C305.953 43.2344 307.641 34.8672 311.016 27.6484C314.438 20.4297 319.266 14.8984 325.5 11.0547C331.734 7.16406 338.953 5.21875 347.156 5.21875C358.031 5.21875 366.75 8.26562 373.312 14.3594C379.875 20.4062 383.695 28.7969 384.773 39.5312H371.203C370.031 31.375 367.477 25.4688 363.539 21.8125C359.648 18.1562 354.188 16.3281 347.156 16.3281C338.531 16.3281 331.758 19.5156 326.836 25.8906C321.961 32.2656 319.523 41.3359 319.523 53.1016V63.0156C319.523 74.125 321.844 82.9609 326.484 89.5234C331.125 96.0859 337.617 99.3672 345.961 99.3672C353.461 99.3672 359.203 97.6797 363.188 94.3047C367.219 90.8828 369.891 84.9531 371.203 76.5156H384.773Z"/>
+      <path d="M440.812 67.5859H416.766V109H403.195V6.625H437.086C448.617 6.625 457.477 9.25 463.664 14.5C469.898 19.75 473.016 27.3906 473.016 37.4219C473.016 43.7969 471.281 49.3516 467.812 54.0859C464.391 58.8203 459.609 62.3594 453.469 64.7031L477.516 108.156V109H463.031L440.812 67.5859ZM416.766 56.5469H437.508C444.211 56.5469 449.531 54.8125 453.469 51.3438C457.453 47.875 459.445 43.2344 459.445 37.4219C459.445 31.0938 457.547 26.2422 453.75 22.8672C450 19.4922 444.562 17.7812 437.438 17.7344H416.766V56.5469Z"/>
+      <path d="M506.484 109H492.984V6.625H506.484V109Z"/>
+      <path d="M561.398 63.3672C549.82 60.0391 541.383 55.9609 536.086 51.1328C530.836 46.2578 528.211 40.2578 528.211 33.1328C528.211 25.0703 531.422 18.4141 537.844 13.1641C544.312 7.86719 552.703 5.21875 563.016 5.21875C570.047 5.21875 576.305 6.57812 581.789 9.29688C587.32 12.0156 591.586 15.7656 594.586 20.5469C597.633 25.3281 599.156 30.5547 599.156 36.2266H585.586C585.586 30.0391 583.617 25.1875 579.68 21.6719C575.742 18.1094 570.188 16.3281 563.016 16.3281C556.359 16.3281 551.156 17.8047 547.406 20.7578C543.703 23.6641 541.852 27.7188 541.852 32.9219C541.852 37.0938 543.609 40.6328 547.125 43.5391C550.688 46.3984 556.711 49.0234 565.195 51.4141C573.727 53.8047 580.383 56.4531 585.164 59.3594C589.992 62.2188 593.555 65.5703 595.852 69.4141C598.195 73.2578 599.367 77.7812 599.367 82.9844C599.367 91.2812 596.133 97.9375 589.664 102.953C583.195 107.922 574.547 110.406 563.719 110.406C556.688 110.406 550.125 109.07 544.031 106.398C537.938 103.68 533.227 99.9766 529.898 95.2891C526.617 90.6016 524.977 85.2812 524.977 79.3281H538.547C538.547 85.5156 540.82 90.4141 545.367 94.0234C549.961 97.5859 556.078 99.3672 563.719 99.3672C570.844 99.3672 576.305 97.9141 580.102 95.0078C583.898 92.1016 585.797 88.1406 585.797 83.125C585.797 78.1094 584.039 74.2422 580.523 71.5234C577.008 68.7578 570.633 66.0391 561.398 63.3672Z"/>
+      <path d="M686.344 91.0703L715.594 6.625H730.359L692.391 109H680.438L642.539 6.625H657.234L686.344 91.0703Z"/>
+      <path d="M758.625 109H745.125V6.625H758.625V109Z"/>
+      <path d="M841.172 82.2812H798.281L788.648 109H774.727L813.82 6.625H825.633L864.797 109H850.945L841.172 82.2812ZM802.359 71.1719H837.164L819.727 23.2891L802.359 71.1719Z"/>
+      <path d="M916.125 67.5859H892.078V109H878.508V6.625H912.398C923.93 6.625 932.789 9.25 938.977 14.5C945.211 19.75 948.328 27.3906 948.328 37.4219C948.328 43.7969 946.594 49.3516 943.125 54.0859C939.703 58.8203 934.922 62.3594 928.781 64.7031L952.828 108.156V109H938.344L916.125 67.5859ZM892.078 56.5469H912.82C919.523 56.5469 924.844 54.8125 928.781 51.3438C932.766 47.875 934.758 43.2344 934.758 37.4219C934.758 31.0938 932.859 26.2422 929.062 22.8672C925.312 19.4922 919.875 17.7812 912.75 17.7344H892.078V56.5469Z"/>
+      </mask>
+      <path d="M56.3438 6.625H69.9141V79.1172C69.9141 88.9141 66.9609 96.5781 61.0547 102.109C55.1953 107.641 47.3672 110.406 37.5703 110.406C27.3984 110.406 19.4766 107.805 13.8047 102.602C8.13281 97.3984 5.29688 90.1094 5.29688 80.7344H18.7969C18.7969 86.5938 20.3906 91.1641 23.5781 94.4453C26.8125 97.7266 31.4766 99.3672 37.5703 99.3672C43.1484 99.3672 47.6484 97.6094 51.0703 94.0938C54.5391 90.5781 56.2969 85.6562 56.3438 79.3281V6.625Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M171.656 61.1172C171.656 71.1484 169.969 79.9141 166.594 87.4141C163.219 94.8672 158.438 100.562 152.25 104.5C146.062 108.438 138.844 110.406 130.594 110.406C122.531 110.406 115.383 108.438 109.148 104.5C102.914 100.516 98.0625 94.8672 94.5938 87.5547C91.1719 80.1953 89.4141 71.6875 89.3203 62.0312V54.6484C89.3203 44.8047 91.0312 36.1094 94.4531 28.5625C97.875 21.0156 102.703 15.25 108.938 11.2656C115.219 7.23438 122.391 5.21875 130.453 5.21875C138.656 5.21875 145.875 7.21094 152.109 11.1953C158.391 15.1328 163.219 20.875 166.594 28.4219C169.969 35.9219 171.656 44.6641 171.656 54.6484V61.1172ZM158.227 54.5078C158.227 42.3672 155.789 33.0625 150.914 26.5938C146.039 20.0781 139.219 16.8203 130.453 16.8203C121.922 16.8203 115.195 20.0781 110.273 26.5938C105.398 33.0625 102.891 42.0625 102.75 53.5938V61.1172C102.75 72.8828 105.211 82.1406 110.133 88.8906C115.102 95.5938 121.922 98.9453 130.594 98.9453C139.312 98.9453 146.062 95.7812 150.844 89.4531C155.625 83.0781 158.086 73.9609 158.227 62.1016V54.5078Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M249.773 61.6797H205.406V97.9609H256.945V109H191.906V6.625H256.242V17.7344H205.406V50.6406H249.773V61.6797Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M384.773 76.5156C383.508 87.3438 379.5 95.7109 372.75 101.617C366.047 107.477 357.117 110.406 345.961 110.406C333.867 110.406 324.164 106.07 316.852 97.3984C309.586 88.7266 305.953 77.125 305.953 62.5938V52.75C305.953 43.2344 307.641 34.8672 311.016 27.6484C314.438 20.4297 319.266 14.8984 325.5 11.0547C331.734 7.16406 338.953 5.21875 347.156 5.21875C358.031 5.21875 366.75 8.26562 373.312 14.3594C379.875 20.4062 383.695 28.7969 384.773 39.5312H371.203C370.031 31.375 367.477 25.4688 363.539 21.8125C359.648 18.1562 354.188 16.3281 347.156 16.3281C338.531 16.3281 331.758 19.5156 326.836 25.8906C321.961 32.2656 319.523 41.3359 319.523 53.1016V63.0156C319.523 74.125 321.844 82.9609 326.484 89.5234C331.125 96.0859 337.617 99.3672 345.961 99.3672C353.461 99.3672 359.203 97.6797 363.188 94.3047C367.219 90.8828 369.891 84.9531 371.203 76.5156H384.773Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M440.812 67.5859H416.766V109H403.195V6.625H437.086C448.617 6.625 457.477 9.25 463.664 14.5C469.898 19.75 473.016 27.3906 473.016 37.4219C473.016 43.7969 471.281 49.3516 467.812 54.0859C464.391 58.8203 459.609 62.3594 453.469 64.7031L477.516 108.156V109H463.031L440.812 67.5859ZM416.766 56.5469H437.508C444.211 56.5469 449.531 54.8125 453.469 51.3438C457.453 47.875 459.445 43.2344 459.445 37.4219C459.445 31.0938 457.547 26.2422 453.75 22.8672C450 19.4922 444.562 17.7812 437.438 17.7344H416.766V56.5469Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M506.484 109H492.984V6.625H506.484V109Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M561.398 63.3672C549.82 60.0391 541.383 55.9609 536.086 51.1328C530.836 46.2578 528.211 40.2578 528.211 33.1328C528.211 25.0703 531.422 18.4141 537.844 13.1641C544.312 7.86719 552.703 5.21875 563.016 5.21875C570.047 5.21875 576.305 6.57812 581.789 9.29688C587.32 12.0156 591.586 15.7656 594.586 20.5469C597.633 25.3281 599.156 30.5547 599.156 36.2266H585.586C585.586 30.0391 583.617 25.1875 579.68 21.6719C575.742 18.1094 570.188 16.3281 563.016 16.3281C556.359 16.3281 551.156 17.8047 547.406 20.7578C543.703 23.6641 541.852 27.7188 541.852 32.9219C541.852 37.0938 543.609 40.6328 547.125 43.5391C550.688 46.3984 556.711 49.0234 565.195 51.4141C573.727 53.8047 580.383 56.4531 585.164 59.3594C589.992 62.2188 593.555 65.5703 595.852 69.4141C598.195 73.2578 599.367 77.7812 599.367 82.9844C599.367 91.2812 596.133 97.9375 589.664 102.953C583.195 107.922 574.547 110.406 563.719 110.406C556.688 110.406 550.125 109.07 544.031 106.398C537.938 103.68 533.227 99.9766 529.898 95.2891C526.617 90.6016 524.977 85.2812 524.977 79.3281H538.547C538.547 85.5156 540.82 90.4141 545.367 94.0234C549.961 97.5859 556.078 99.3672 563.719 99.3672C570.844 99.3672 576.305 97.9141 580.102 95.0078C583.898 92.1016 585.797 88.1406 585.797 83.125C585.797 78.1094 584.039 74.2422 580.523 71.5234C577.008 68.7578 570.633 66.0391 561.398 63.3672Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M686.344 91.0703L715.594 6.625H730.359L692.391 109H680.438L642.539 6.625H657.234L686.344 91.0703Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M758.625 109H745.125V6.625H758.625V109Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M841.172 82.2812H798.281L788.648 109H774.727L813.82 6.625H825.633L864.797 109H850.945L841.172 82.2812ZM802.359 71.1719H837.164L819.727 23.2891L802.359 71.1719Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      <path d="M916.125 67.5859H892.078V109H878.508V6.625H912.398C923.93 6.625 932.789 9.25 938.977 14.5C945.211 19.75 948.328 27.3906 948.328 37.4219C948.328 43.7969 946.594 49.3516 943.125 54.0859C939.703 58.8203 934.922 62.3594 928.781 64.7031L952.828 108.156V109H938.344L916.125 67.5859ZM892.078 56.5469H912.82C919.523 56.5469 924.844 54.8125 928.781 51.3438C932.766 47.875 934.758 43.2344 934.758 37.4219C934.758 31.0938 932.859 26.2422 929.062 22.8672C925.312 19.4922 919.875 17.7812 912.75 17.7344H892.078V56.5469Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+      </svg>
+
+
+      </h4>
+      <p id="mycareer">Full Stack Web Developer.</p>
+    <!-- <img src="jc-2.png" alt="boy" class="w3-image" width="992" height="1108"> -->
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">JCV</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Joe Cris Viar is a Fullstack Web Developer. Studied Computer Programming in La Verdad Christian College and also a certified Tuitt Bootcamp graduate. He loves programming and passionate about it, he believes that programming plays an important role in terms of technology innovation. For him human being has the most complex program created by the best programmer our Creator. Joe loves entrepreneurship and innovation, he would like to have his own business someday.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Full Stack Develover</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Jane Doe saved us from a web disaster.</p><br>
+    
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than Jane Doe.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-row-padding w3-margin-left" style="margin:0 -16px">
+      <h5 class="w3-text-light-grey">JSJ Event Organizer</h5>
+    </div>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding w3-margin-left" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://joecrisviar.github.io/cps1-event-organizer/home.html"><img src="images/cps1/g0.jpg" style="width:100%; height: 300px;"></a>
+      </div>
+      <div class="w3-half">
+        <a href="https://joecrisviar.github.io/cps1-event-organizer/home.html"><img src="images/cps1/g8.jpg" style="width:100%; height: 300px;"></a>
+      </div>  
+    <!-- End photo grid -->
+    </div>
+
+
+    <div class="w3-row-padding w3-margin-left" style="margin:0 -16px">
+      <h5 class="w3-text-light-grey">JSJ E-Commerce</h5>
+    </div>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding w3-margin-left" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://csp2-pcart.herokuapp.com/catalog/0"><img src="images/cps2/1.jpg" style="width:100%; height: 300px;"></a>
+      </div>
+      <div class="w3-half">
+        <a href="https://csp2-pcart.herokuapp.com/catalog/0"><img src="images/cps2/2.jpg" style="width:100%; height: 300px;"></a>
+      </div>  
+    <!-- End photo grid -->
+    </div>
+
+    <div class="w3-row-padding w3-margin-left" style="margin:0 -16px">
+      <h5 class="w3-text-light-grey">JSJ E-Cinema</h5>
+    </div>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding w3-margin-left" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://cps3-frontend.herokuapp.com/"><img src="images/cps3/1.jpg" style="width:100%; height: 300px;"></a>
+      </div>
+      <div class="w3-half">
+        <a href="https://cps3-frontend.herokuapp.com/"><img src="images/cps3/2.jpg" style="width:100%; height: 300px;"></a>
+      </div>  
+    <!-- End photo grid -->
+    </div>
+
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Taguig City, Philippines</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +63-945-704-1129</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: joecris.viar@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">JSJ</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
