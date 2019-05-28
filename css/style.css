@@ -47,10 +47,60 @@ img:hover {
 	top: 65%;
 	left: 54%;
 	transform: translate(-50%, -50%);
-	animation: moveInLeft 1.5s ease-out;
+	animation: moveInLeft 2s ease-out;
 
 }
+.cps1, .cps2, .cps3 {
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+}
 
+.cps1:hover{
+	color: gold;
+	font-size: 21px;
+}
+
+.cps2:hover{
+	color: gold;
+	font-size: 21px;
+}
+.cps3:hover{
+	color: gold;
+	font-size: 21px;
+}
+
+.cps1:hover + .cps1-desc{
+	max-height: 500px;
+    transition: max-height 0.9s ease-in;
+    animation: flyLeft 1.5s ease-out; 
+}
+.cps1-desc{
+	max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
+
+.cps2:hover + .cps2-desc{
+	max-height: 500px;
+    transition: max-height 0.9s ease-in;
+    animation: flyLeft 1.5s ease-out;
+}
+.cps2-desc{
+	max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
+.cps3:hover + .cps3-desc{
+	max-height: 500px;
+    transition: max-height 0.9s ease-in;
+    animation: flyLeft 1.5s ease-out;
+}
+.cps3-desc{
+	max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
 
 #myname path:nth-child(1){
 	
@@ -161,5 +211,21 @@ img:hover {
 	100%{
 		opacity: 1;
 		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes flyLeft{
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80%{
+		transform: translate(0px, 0px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0, 0%);
 	}
 }
